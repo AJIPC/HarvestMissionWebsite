@@ -14,6 +14,7 @@
             font-family: 'Inter', sans-serif;
             background-color: #0a0a0a;
             scroll-behavior: smooth;
+            overflow-x: hidden;
         }
 
         .purple-gradient {
@@ -53,10 +54,12 @@
     <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-purple-900/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex items-center gap-2">
-                    <img src="https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/logo.png" alt="Harvest Mission Logo" class="h-10 w-auto object-contain block">
-                    <span class="text-xl md:text-2xl font-bold tracking-tighter hidden sm:block">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <div class="flex items-center gap-1 md:gap-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/logo.png" alt="Harvest Mission Logo" class="h-9 md:h-12 w-auto object-contain block scale-150 -translate-x-2 -translate-y-1">
+                    </div >
+                    <span class="text-sm md:text-2xl font-bold tracking-tighter leading-none">
                         <span class="text-purple-500">HARVEST</span> MISSION
                     </span >
                 </div >
@@ -71,7 +74,7 @@
                     </div >
                 </div >
                 <div class="lg:hidden">
-                    <button id="mobile-menu-button" class="text-gray-300 hover:text-white">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-white p-2">
                         <i class="fas fa-bars text-2xl"></i >
                     </button>
                 </div >
@@ -85,32 +88,32 @@
         <div class="absolute inset-0 hero-overlay"></div >
         
         <div class="relative z-10 text-center px-4 max-w-5xl">
-            <div class="inline-block px-4 py-1 mb-6 border border-purple-500/50 rounded-full text-purple-400 text-sm font-medium tracking-widest uppercase">
+            <div class="inline-block px-4 py-1 mb-4 md:mb-6 border border-purple-500/50 rounded-full text-purple-400 text-xs md:text-sm font-medium tracking-widest uppercase">
                 Spreading the Gospel across India
             </div >
-            <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight">
+            <h1 class="text-4xl md:text-7xl font-bold mb-6 md:mb-8 leading-tight">
                 Harvesting Souls for <br><span class="text-gradient">Christ's Kingdom</span >
             </h1>
-            <p class="text-xl md:text-2xl text-gray-300 mb-10 font-light italic">
+            <p class="text-lg md:text-2xl text-gray-300 mb-8 md:mb-10 font-light italic px-2">
                 “Go into all the world and preach the gospel to all creation.” — Mark 16:15
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#give" class="bg-purple-600 hover:bg-purple-700 text-white px-10 py-4 rounded-full text-lg font-semibold transition transform hover:scale-105 shadow-xl">Support the Mission</a>
-                <a href="#ministries" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-10 py-4 rounded-full text-lg font-semibold transition transform hover:scale-105">Our Work</a>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#give" class="w-full sm:w-auto bg-purple-600 hover:bg-purple-700 text-white px-10 py-3 md:py-4 rounded-full text-lg font-semibold transition transform hover:scale-105 shadow-xl">Support the Mission</a>
+                <a href="#ministries" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-10 py-3 md:py-4 rounded-full text-lg font-semibold transition transform hover:scale-105">Our Work</a>
             </div >
         </div >
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-24 bg-[#0a0a0a]">
+    <section id="about" class="py-16 md:py-24 bg-[#0a0a0a]">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
                 <div class="reveal">
-                    <h2 class="text-4xl font-bold mb-6">Our <span class="text-purple-500">Purpose</span ></h2>
-                    <p class="text-gray-400 text-lg mb-6 leading-relaxed">
-                        Harvest Mission & Charitable Trust India is dedicated to fulfilling the Great Commission. Based in the beautiful state of <strong class="text-purple-400">Kerala, India</strong>, we believe in reaching every individual with the life-changing message of Jesus Christ through direct outreach and community empowerment.
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Our <span class="text-purple-500">Purpose</span ></h2 >
+                    <p class="text-gray-400 text-base md:text-lg mb-6 leading-relaxed">
+                        Harvest Mission & Charitable Trust India is dedicated to fulfilling the Great Commission. Based in the beautiful state of <strong class="text-purple-400">Kerala, India</strong >, we believe in reaching every individual with the life-changing message of Jesus Christ through direct outreach and community empowerment.
                     </p>
-                    <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                    <p class="text-gray-400 text-base md:text-lg mb-8 leading-relaxed">
                         From the bustling streets to the most remote villages, we stand as a voice of hope, bringing light to those in darkness and offering a path to transformation through faith.
                     </p>
                     <div class="glass-card p-6 rounded-2xl mb-8 border-purple-500/30">
@@ -119,12 +122,12 @@
                     </div >
                     <div class="flex gap-6">
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-purple-500">100%</div >
-                            <div class="text-xs text-gray-500 uppercase">Faith Driven</div >
+                            <div class="text-2xl md:text-3xl font-bold text-purple-500">100%</div >
+                            <div class="text-[10px] md:text-xs text-gray-500 uppercase">Faith Driven</div >
                         </div >
                         <div class="text-center border-l border-white/10 pl-6">
-                            <div class="text-3xl font-bold text-purple-500">Kerala</div >
-                            <div class="text-xs text-gray-500 uppercase">Based</div >
+                            <div class="text-2xl md:text-3xl font-bold text-purple-500">Kerala</div >
+                            <div class="text-[10px] md:text-xs text-gray-500 uppercase">Based</div >
                         </div >
                     </div >
                 </div >
@@ -137,113 +140,102 @@
     </section>
 
     <!-- Ministries Section -->
-    <section id="ministries" class="py-24 bg-[#0f172a]">
+    <section id="ministries" class="py-16 md:py-24 bg-[#0f172a]">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-20 reveal">
-                <h2 class="text-4xl font-bold mb-4">Our <span class="text-purple-500">Ministries</span ></h2>
+            <div class="text-center mb-12 md:mb-20 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="text-purple-500">Ministries</span ></h2 >
                 <p class="text-gray-400">How we serve the people and the Kingdom</p>
             </div >
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Remote Village Outreach -->
-                <div class="glass-card p-10 rounded-3xl border-purple-500/50 bg-purple-900/10 hover:bg-purple-900/20 transition duration-500 reveal">
-                    <div class="w-16 h-16 purple-gradient rounded-2xl flex items-center justify-center mb-8 shadow-lg">
-                        <i class="fas fa-map-location-dot text-2xl text-white"></i >
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="glass-card p-8 md:p-10 rounded-3xl border-purple-500/50 bg-purple-900/10 hover:bg-purple-900/20 transition duration-500 reveal">
+                    <div class="w-14 h-14 md:w-16 md:h-16 purple-gradient rounded-2xl flex items-center justify-center mb-6 md:mb-8 shadow-lg">
+                        <i class="fas fa-map-location-dot text-xl md:text-2xl text-white"></i >
                     </div >
-                    <h3 class="text-2xl font-bold mb-4">Remote Village Outreach</h3>
-                    <p class="text-gray-400 leading-relaxed">Bringing the Gospel of Jesus Christ to the most remote and unreached villages across India.</p>
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">Remote Village Outreach</h3>
+                    <p class="text-gray-400 text-sm md:text-base leading-relaxed">Bringing the Gospel of Jesus Christ to the most remote and unreached villages across India.</p>
                 </div >
 
-                <!-- Church Planting -->
-                <div class="glass-card p-10 rounded-3xl hover:bg-purple-900/10 transition duration-500 reveal">
-                    <div class="w-16 h-16 purple-gradient rounded-2xl flex items-center justify-center mb-8 shadow-lg">
-                        <i class="fas fa-church text-2xl text-white"></i >
+                <div class="glass-card p-8 md:p-10 rounded-3xl hover:bg-purple-900/10 transition duration-500 reveal">
+                    <div class="w-14 h-14 md:w-16 md:h-16 purple-gradient rounded-2xl flex items-center justify-center mb-6 md:mb-8 shadow-lg">
+                        <i class="fas fa-church text-xl md:text-2xl text-white"></i >
                     </div >
-                    <h3 class="text-2xl font-bold mb-4">Church Planting</h3>
-                    <p class="text-gray-400 leading-relaxed">Establishing strong local church communities to nurture new believers and provide spiritual leadership.</p>
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">Church Planting</h3>
+                    <p class="text-gray-400 text-sm md:text-base leading-relaxed">Establishing strong local church communities to nurture new believers and provide spiritual leadership.</p>
                 </div >
 
-                <!-- Personal Evangelism -->
-                <div class="glass-card p-10 rounded-3xl hover:bg-purple-900/10 transition duration-500 reveal">
-                    <div class="w-16 h-16 purple-gradient rounded-2xl flex items-center justify-center mb-8 shadow-lg">
-                        <i class="fas fa-cross text-2xl text-white"></i >
+                <div class="glass-card p-8 md:p-10 rounded-3xl hover:bg-purple-900/10 transition duration-500 reveal">
+                    <div class="w-14 h-14 md:w-16 md:h-16 purple-gradient rounded-2xl flex items-center justify-center mb-6 md:mb-8 shadow-lg">
+                        <i class="fas fa-cross text-xl md:text-2xl text-white"></i >
                     </div >
-                    <h3 class="text-2xl font-bold mb-4">Personal Evangelism</h3>
-                    <p class="text-gray-400 leading-relaxed">Reaching out to individuals personally to share the love of Christ and guide them toward salvation.</p>
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">Personal Evangelism</h3>
+                    <p class="text-gray-400 text-sm md:text-base leading-relaxed">Reaching out to individuals personally to share the love of Christ and guide them toward salvation.</p>
                 </div >
 
-                <!-- Public Meetings -->
-                <div class="glass-card p-10 rounded-3xl hover:bg-purple-900/10 transition duration-500 reveal">
-                    <div class="w-16 h-16 purple-gradient rounded-2xl flex items-center justify-center mb-8 shadow-lg">
-                        <i class="fas fa-users text-2xl text-white"></i >
+                <div class="glass-card p-8 md:p-10 rounded-3xl hover:bg-purple-900/10 transition duration-500 reveal">
+                    <div class="w-14 h-14 md:w-16 md:h-16 purple-gradient rounded-2xl flex items-center justify-center mb-6 md:mb-8 shadow-lg">
+                        <i class="fas fa-users text-xl md:text-2xl text-white"></i >
                     </div >
-                    <h3 class="text-2xl font-bold mb-4">Public Meetings</h3>
-                    <p class="text-gray-400 leading-relaxed">Organizing powerful open-air meetings and mini-conferences to spread the Word to large gatherings.</p>
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">Public Meetings</h3>
+                    <p class="text-gray-400 text-sm md:text-base leading-relaxed">Organizing powerful open-air meetings and mini-conferences to spread the Word to large gatherings.</p>
                 </div >
 
-                <!-- Charity & Education -->
-                <div class="glass-card p-10 rounded-3xl hover:bg-purple-900/10 transition duration-500 reveal">
-                    <div class="w-16 h-16 purple-gradient rounded-2xl flex items-center justify-center mb-8 shadow-lg">
-                        <i class="fas fa-graduation-cap text-2xl text-white"></i >
+                <div class="glass-card p-8 md:p-10 rounded-3xl hover:bg-purple-900/10 transition duration-500 reveal">
+                    <div class="w-14 h-14 md:w-16 md:h-16 purple-gradient rounded-2xl flex items-center justify-center mb-6 md:mb-8 shadow-lg">
+                        <i class="fas fa-graduation-cap text-xl md:text-2xl text-white"></i >
                     </div >
-                    <h3 class="text-2xl font-bold mb-4">Charity & Education</h3>
-                    <p class="text-gray-400 leading-relaxed">Supporting children's education and providing essential aid to families in need through compassionate charity work.</p>
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">Charity & Education</h3>
+                    <p class="text-gray-400 text-sm md:text-base leading-relaxed">Supporting children's education and providing essential aid to families in need through compassionate charity work.</p>
                 </div >
 
-                <!-- Anti-Drug Awareness -->
-                <div class="glass-card p-10 rounded-3xl hover:bg-purple-900/10 transition duration-500 reveal">
-                    <div class="w-16 h-16 purple-gradient rounded-2xl flex items-center justify-center mb-8 shadow-lg">
-                        <i class="fas fa-shield-heart text-2xl text-white"></i >
+                <div class="glass-card p-8 md:p-10 rounded-3xl hover:bg-purple-900/10 transition duration-500 reveal">
+                    <div class="w-14 h-14 md:w-16 md:h-16 purple-gradient rounded-2xl flex items-center justify-center mb-6 md:mb-8 shadow-lg">
+                        <i class="fas fa-hand-holding-heart text-xl md:text-2xl text-white"></i >
                     </div >
-                    <h3 class="text-2xl font-bold mb-4">Anti-Drug Awareness</h3>
-                    <p class="text-gray-400 leading-relaxed">Empowering the youth through awareness programs against drug abuse, promoting a life of purpose in Christ.</p>
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">Anti-Drug Awareness</h3>
+                    <p class="text-gray-400 text-sm md:text-base leading-relaxed">Empowering the youth through awareness programs against drug abuse, promoting a life of purpose in Christ.</p>
                 </div >
             </div >
         </div >
     </section >
 
     <!-- Gallery Section -->
-    <section id="gallery" class="py-24 bg-black">
+    <section id="gallery" class="py-16 md:py-24 bg-black">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-4 reveal">Ministry <span class="text-purple-500">Moments</span ></h2>
-            <p class="text-gray-400 mb-16 reveal">Witnessing the fruit of God's work through our outreach and meetings.</p>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 reveal">Ministry <span class="text-purple-500">Moments</span ></h2 >
+            <p class="text-gray-400 mb-12 md:mb-16 reveal">Witnessing the fruit of God's work through our outreach and meetings.</p>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
-                <!-- Photo 1 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 reveal">
                 <div class="group relative overflow-hidden rounded-2xl aspect-video cursor-pointer" onclick="openLightbox('https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/Team.jpeg')">
-                    <img src="https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/Team.jpeg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 group-hover:scale-110" alt="Ministry Moment 1">
-                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                    <img src="https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/Team.jpeg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Ministry Moment 1">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 bg-black/30">
                         <i class="fas fa-search-plus text-3xl text-white"></i >
                     </div >
                 </div >
 
-                <!-- Photo 2 -->
                 <div class="group relative overflow-hidden rounded-2xl aspect-video cursor-pointer" onclick="openLightbox('https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/Team2.jpeg')">
-                    <img src="https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/Team2.jpeg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 group-hover:scale-110" alt="Ministry Moment 2">
-                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                    <img src="https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/Team2.jpeg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Ministry Moment 2">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 bg-black/30">
                         <i class="fas fa-search-plus text-3xl text-white"></i >
                     </div >
                 </div >
 
-                <!-- Photo 3 -->
                 <div class="group relative overflow-hidden rounded-2xl aspect-video cursor-pointer" onclick="openLightbox('https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/outreach3.jpeg')">
-                    <img src="https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/outreach3.jpeg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 group-hover:scale-110" alt="Ministry Moment 3">
-                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                    <img src="https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/outreach3.jpeg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Ministry Moment 3">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 bg-black/30">
                         <i class="fas fa-search-plus text-3xl text-white"></i >
                     </div >
                 </div >
 
-                <!-- Photo 4 -->
                 <div class="group relative overflow-hidden rounded-2xl aspect-video cursor-pointer" onclick="openLightbox('https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/outreach.jpeg')">
-                    <img src="https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/outreach.jpeg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 group-hover:scale-110" alt="Ministry Moment 4">
-                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                    <img src="https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/outreach.jpeg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Ministry Moment 4">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 bg-black/30">
                         <i class="fas fa-search-plus text-3xl text-white"></i >
                     </div >
                 </div >
 
-                <!-- Photo 5 -->
                 <div class="group relative overflow-hidden rounded-2xl aspect-video cursor-pointer" onclick="openLightbox('https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/outreach2.jpeg')">
-                    <img src="https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/outreach2.jpeg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 group-hover:scale-110" alt="Ministry Moment 5">
-                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                    <img src="https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/outreach2.jpeg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Ministry Moment 5">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 bg-black/30">
                         <i class="fas fa-search-plus text-3xl text-white"></i >
                     </div >
                 </div >
@@ -258,45 +250,45 @@
     </div >
 
     <!-- Give Section -->
-    <section id="give" class="py-24 purple-gradient relative overflow-hidden">
+    <section id="give" class="py-16 md:py-24 purple-gradient relative overflow-hidden">
         <div class="max-w-5xl mx-auto px-4 relative z-10">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-4xl font-bold mb-4 text-white">Partner With Us</h2 >
-                <p class="text-purple-100 text-xl">Your generosity fuels the harvest.</p>
+            <div class="text-center mb-12 md:mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Partner With Us</h2 >
+                <p class="text-purple-100 text-lg md:text-xl">Your generosity fuels the harvest.</p>
             </div >
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8 md:p-12 reveal">
+            <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+                <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-6 md:p-12 reveal">
                     <div class="flex items-center mb-6">
-                        <i class="fas fa-university text-3xl text-white mr-4"></i >
-                        <h3 class="text-2xl font-bold text-white">Bank Transfer Details</h3 >
+                        <i class="fas fa-university text-2xl md:text-3xl text-white mr-4"></i >
+                        <h3 class="text-xl md:text-2xl font-bold text-white">Bank Transfer Details</h3 >
                     </div >
-                    <div class="space-y-6 text-white/90">
+                    <div class="space-y-4 md:space-y-6 text-sm md:text-base text-white/90">
                         <div class="border-b border-white/10 pb-2">
-                            <p class="text-xs uppercase tracking-widest text-purple-200">Account Holder</p>
-                            <p class="text-lg font-medium">Harvest Mission & Charitable Trust in India</p>
+                            <p class="text-[10px] md:text-xs uppercase tracking-widest text-purple-200">Account Holder</p>
+                            <p class="font-medium">Harvest Mission & Charitable Trust in India</p>
                         </div >
                         <div class="border-b border-white/10 pb-2">
-                            <p class="text-xs uppercase tracking-widest text-purple-200">Account Number</p>
-                            <p class="text-lg font-medium">0115 0730 0000 0208</p>
+                            <p class="text-[10px] md:text-xs uppercase tracking-widest text-purple-200">Account Number</p>
+                            <p class="font-medium">0115 0730 0000 0208</p>
                         </div >
                         <div class="border-b border-white/10 pb-2">
-                            <p class="text-xs uppercase tracking-widest text-purple-200">Bank & Branch</p>
-                            <p class="text-lg font-medium">South Indian Bank, Theodical</p>
+                            <p class="text-[10px] md:text-xs uppercase tracking-widest text-purple-200">Bank & Branch</p>
+                            <p class="font-medium">South Indian Bank, Theodical</p>
                         </div >
                         <div>
-                            <p class="text-xs uppercase tracking-widest text-purple-200">IFSC Code</p>
-                            <p class="text-lg font-medium">SIBL 0000115</p>
+                            <p class="text-[10px] md:text-xs uppercase tracking-widest text-purple-200">IFSC Code</p>
+                            <p class="font-medium">SIBL 0000115</p>
                         </div >
                     </div >
                 </div >
 
-                <div class="bg-black/40 backdrop-blur-lg border border-white/10 rounded-3xl p-8 md:p-12 reveal">
+                <div class="bg-black/40 backdrop-blur-lg border border-white/10 rounded-3xl p-6 md:p-12 reveal">
                     <div class="flex items-center mb-6">
-                        <i class="fas fa-hands-helping text-3xl text-white mr-4"></i >
-                        <h3 class="text-2xl font-bold text-white">Join the Team</h3 >
+                        <i class="fas fa-hands-helping text-2xl md:text-3xl text-white mr-4"></i >
+                        <h3 class="text-xl md:text-2xl font-bold text-white">Join the Team</h3 >
                     </div >
-                    <p class="text-purple-100 mb-8 leading-relaxed">We are looking for passionate volunteers to join our outreach, media, and awareness teams.</p>
+                    <p class="text-purple-100 mb-6 md:mb-8 text-sm md:text-base leading-relaxed">We are looking for passionate volunteers to join our outreach, media, and awareness teams.</p>
                     <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! We will contact you soon to discuss volunteering.');">
                         <input type="text" placeholder="Your Full Name" class="w-full bg-white/10 border border-white/20 rounded-xl p-3 focus:outline-none focus:border-purple-400 transition text-white">
                         <input type="email" placeholder="Email Address" class="w-full bg-white/10 border border-white/20 rounded-xl p-3 focus:outline-none focus:border-purple-400 transition text-white">
@@ -309,41 +301,41 @@
     </section >
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-black">
-        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16">
+    <section id="contact" class="py-16 md:py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 md:gap-16">
             <div class="reveal">
-                <h2 class="text-4xl font-bold mb-6">Get in <span class="text-purple-500">Touch</span ></h2 >
-                <p class="text-gray-400 mb-10 text-lg">Have prayer requests or inquiries? Our team is here to listen and pray with you.</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Get in <span class="text-purple-500">Touch</span ></h2 >
+                <p class="text-gray-400 mb-10 text-base md:text-lg">Have prayer requests or inquiries? Our team is here to listen and pray with you.</p>
                 <div class="space-y-6">
                     <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-purple-900/30 flex items-center justify-center mr-4">
+                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-purple-900/30 flex items-center justify-center mr-4">
                             <i class="fas fa-envelope text-purple-500"></i >
                         </div >
-                        <span class="text-lg">contact@harvestmissionindia.org</span >
+                        <span class="text-base md:text-lg">contact@harvestmissionindia.org</span >
                     </div >
                     <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-purple-900/30 flex items-center justify-center mr-4">
+                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-purple-900/30 flex items-center justify-center mr-4">
                             <i class="fas fa-phone text-purple-500"></i >
                         </div >
                         <div class="flex flex-col">
-                            <span class="text-lg">+91 6235 727 584</span >
-                            <span class="text-lg">+91 8606 253 691</span >
+                            <span class="text-base md:text-lg">+91 6235 727 584</span >
+                            <span class="text-base md:text-lg">+91 8606 253 691</span >
                         </div >
                     </div >
                     <div class="flex items-start">
-                        <div class="w-12 h-12 rounded-full bg-purple-900/30 flex items-center justify-center mr-4 shrink-0">
+                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-purple-900/30 flex items-center justify-center mr-4 shrink-0">
                             <i class="fas fa-location-dot text-purple-500"></i >
                         </div >
-                        <span class="text-lg leading-tight">
+                        <span class="text-base md:text-lg leading-tight">
                             Theodical P.O, Ayroor <br> Kerala 689 613, India
                         </span >
                     </div >
                 </div >
             </div >
             <form class="space-y-4 reveal" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
-                <input type="text" placeholder="Your Name" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple-500 transition">
-                <input type="email" placeholder="Your Email" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple-500 transition">
-                <textarea placeholder="Your Prayer Request or Message" rows="4" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple-500 transition"></textarea>
+                <input type="text" placeholder="Your Name" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple-500 transition text-white">
+                <input type="email" placeholder="Your Email" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple-500 transition text-white">
+                <textarea placeholder="Your Prayer Request or Message" rows="4" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple-500 transition text-white"></textarea>
                 <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 p-4 rounded-xl font-bold transition shadow-lg shadow-purple-500/20">Send Message</button>
             </form>
         </div >
@@ -353,7 +345,9 @@
     <footer class="py-12 border-t border-white/10 text-center">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex flex-col items-center">
-                <img src="https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/logo.png" alt="Harvest Mission Logo" class="h-16 w-auto mx-auto mb-2 object-contain opacity-90">
+                <div class="relative overflow-hidden">
+                    <img src="https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/logo.png" alt="Harvest Mission Logo" class="h-16 w-auto mx-auto mb-[-10px] object-contain opacity-90 scale-125">
+                </div >
                 <span class="text-xl font-bold tracking-tighter">
                     <span class="text-purple-500">HARVEST</span > MISSION
                 </span >
