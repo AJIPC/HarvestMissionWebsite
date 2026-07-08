@@ -289,9 +289,9 @@
                     </div >
                     <p class="text-purple-100 mb-6 md:mb-8 text-sm md:text-base leading-relaxed">We are looking for passionate volunteers to join our outreach, media, and awareness teams.</p>
                     <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! We will contact you soon to discuss volunteering.');">
-                        <input type="text" placeholder="Your Full Name" class="w-full bg-white/10 border border-white/20 rounded-xl p-3 focus:outline-none focus:border-purple-400 transition text-white">
-                        <input type="email" placeholder="Your Email Address" class="w-full bg-white/10 border border-white/20 rounded-xl p-3 focus:outline-none focus:border-purple-400 transition text-white">
-                        <textarea placeholder="How would you like to help?" rows="3" class="w-full bg-white/10 border border-white/20 rounded-xl p-3 focus:outline-none focus:border-purple-400 transition text-white"></textarea>
+                        <input type="text" placeholder="Your Full Name" required class="w-full bg-white/10 border border-white/20 rounded-xl p-3 focus:outline-none focus:border-purple-400 transition text-white">
+                        <input type="email" placeholder="Email Address" required class="w-full bg-white/10 border border-white/20 rounded-xl p-3 focus:outline-none focus:border-purple-400 transition text-white">
+                        <textarea placeholder="How would you like to help?" rows="3" required class="w-full bg-white/10 border border-white/20 rounded-xl p-3 focus:outline-none focus:border-purple-400 transition text-white"></textarea>
                         <button type="submit" class="w-full bg-white text-purple-900 font-bold py-3 rounded-xl hover:bg-gray-100 transition shadow-lg">Apply to Volunteer</button>
                     </form>
                 </div >
@@ -332,9 +332,9 @@
                 </div >
             </div >
             <form class="space-y-4 reveal" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
-                <input type="text" placeholder="Your Name" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple-500 transition text-white">
-                <input type="email" placeholder="Your Email" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple-500 transition text-white">
-                <textarea placeholder="Your Prayer Request or Message" rows="4" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple-500 transition text-white"></textarea>
+                <input type="text" placeholder="Your Name" required class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple-500 transition text-white">
+                <input type="email" placeholder="Your Email" required class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple-500 transition text-white">
+                <textarea placeholder="Your Prayer Request or Message" rows="4" required class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple-500 transition text-white"></textarea>
                 <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 p-4 rounded-xl font-bold transition shadow-lg shadow-purple-500/20">Send Message</button>
             </form>
         </div >
@@ -344,8 +344,8 @@
     <footer class="py-12 border-t border-white/10 text-center">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex flex-col items-center">
-                <div class="relative overflow-hidden">
-                    <img src="https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/logo.png" alt="Harvest Mission Logo" class="h-16 w-auto mx-auto mb-[-10px] object-contain opacity-90 scale-125">
+                <div class="relative overflow-hidden h-20 w-20">
+                    <img src="https://raw.githubusercontent.com/AJIPC/HarvestMissionWebsite/main/logo.png" alt="Harvest Mission Logo" class="absolute inset-0 h-full w-full object-contain opacity-90 scale-130">
                 </div >
                 <span class="text-xl font-bold tracking-tighter">
                     <span class="text-purple-500">HARVEST</span > MISSION
@@ -356,7 +356,7 @@
             <div class="mt-8 flex justify-center space-x-6 text-gray-400">
                 <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-youtube"></i></a>
+                <a href="http://www.youtube.com/@HarvestMission-24" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition"><i class="fab fa-youtube"></i></a>
             </div >
         </div >
     </footer >
@@ -364,7 +364,7 @@
     <script>
         const btn = document.getElementById('mobile-menu-button');
         btn.addEventListener('click', () => {
-            alert('Mobile menu would open here. Please use desktop view for the full experience.');
+            alert('Mobile menu feature would expand here. For this demo, please use desktop view.');
         });
 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
