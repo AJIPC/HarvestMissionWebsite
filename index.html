@@ -299,23 +299,20 @@
                         We are looking for passionate volunteers to join our outreach, media, and awareness teams.
                     </p>
                     <!-- Formspree Integrated Form with Redirect -->
-                    <form action="https://formspree.io/f/mvzjeqzp" method="POST" class="space-y-4">
-                        <!-- REDIRECT LINK: Change the value to your actual website URL -->
-                        <input type="hidden" name="_next" value="https://theharvestmission.dpdns.org/">
-                        
-                        <input type="text" name="Volunteer_Name" placeholder="Your Full Name" required 
-                            class="w-full bg-white/10 border border-white/20 rounded-xl p-3 focus:outline-none focus:border-purple-400 transition text-white">
-                        
-                        <input type="email" name="Volunteer_Email" placeholder="Email Address" required 
-                            class="w-full bg-white/10 border border-white/20 rounded-xl p-3 focus:outline-none focus:border-purple-400 transition text-white">
-                        
-                        <textarea name="Volunteer_Interest" placeholder="How would you like to help?" rows="3" required 
-                            class="w-full bg-white/10 border border-white/20 rounded-xl p-3 focus:outline-none focus:border-purple-400 transition text-white"></textarea>
-                        
-                        <button type="submit" class="w-full bg-white text-purple-900 font-bold py-3 rounded-xl hover:bg-purple-100 transition shadow-lg">
-                            Apply to Volunteer
-                        </button>
-                    </form>
+                <form id="volunteer-form" action="https://formspree.io/f/mvzjeqzp" method="POST" class="space-y-4">
+                <input type="text" name="name" placeholder="Your Full Name" required 
+                    class="w-full bg-white/10 border border-white/20 rounded-xl p-3 focus:outline-none focus:border-purple-400 transition text-white">
+                
+                <input type="email" name="email" placeholder="Email Address" required 
+                    class="w-full bg-white/10 border border-white/20 rounded-xl p-3 focus:outline-none focus:border-purple-400 transition text-white">
+                
+                <textarea name="message" placeholder="How would you like to help?" rows="3" required 
+                    class="w-full bg-white/10 border border-white/20 rounded-xl p-3 focus:outline-none focus:border-purple-400 transition text-white"></textarea>
+                
+                <button type="submit" class="w-full bg-white text-purple-900 font-bold py-3 rounded-xl hover:bg-purple-100 transition shadow-lg">
+                    Apply to Volunteer
+                </button>
+            </form>
                 </div>
             </div >
         </div >
