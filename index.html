@@ -298,8 +298,11 @@
                     <p class="text-purple-100 mb-8 leading-relaxed">
                         We are looking for passionate volunteers to join our outreach, media, and awareness teams.
                     </p>
-                    <!-- Formspree Integrated Form -->
+                    <!-- Formspree Integrated Form with Redirect -->
                     <form action="https://formspree.io/f/mvzjeqzp" method="POST" class="space-y-4">
+                        <!-- REDIRECT LINK: Change the value to your actual website URL -->
+                        <input type="hidden" name="_next" value="https://yourwebsite.com">
+                        
                         <input type="text" name="Volunteer_Name" placeholder="Your Full Name" required 
                             class="w-full bg-white/10 border border-white/20 rounded-xl p-3 focus:outline-none focus:border-purple-400 transition text-white">
                         
