@@ -353,13 +353,24 @@
                     </div >
                 </div >
             </div >
-             <form class="space-y-4 reveal" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
-                <input type="text" placeholder="Your Name" required class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple-500 transition text-white">
-                <input type="email" placeholder="Your Email" required class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple-500 transition text-white">
-                <textarea placeholder="Your Prayer Request or Message" rows="4" required class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple-500 transition text-white"></textarea>
-                <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 p-4 rounded-xl font-bold transition shadow-lg shadow-purple-500/20">Send Message</button>
-            </form>
-        </div >
+             <!-- Contact Form -->
+    <form action="https://formspree.io/f/mvzjeqzp" method="POST" class="space-y-4 reveal">
+        <!-- REDIRECT LINK: Change the value to your actual website URL -->
+        <input type="hidden" name="_next" value="https://yourwebsite.com">
+    
+        <input type="text" name="Contact_Name" placeholder="Your Name" required 
+            class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple-500 transition text-white">
+        
+        <input type="email" name="Contact_Email" placeholder="Your Email" required 
+            class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple-500 transition text-white">
+        
+        <textarea name="Prayer_Request_or_Message" placeholder="Your Prayer Request or Message" rows="4" required 
+            class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple-500 transition text-white"></textarea>
+        
+        <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 p-4 rounded-xl font-bold transition shadow-lg shadow-purple-500/20">
+            Send Message
+        </button>
+</form>
     </section >
 
     <!-- Footer -->
